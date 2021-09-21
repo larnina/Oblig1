@@ -10,11 +10,10 @@ header {
     display: inline-block;
 }
 
-header > a {
-    font-family: 'Gabriela', serif;
+header > h1 {
     font-family: 'Gabriela', serif;
     color: #fff;
-    font-size: 2em;
+    font-size: 3em;
     margin: auto;
     padding: 20px 0 0 0;
 }
@@ -87,4 +86,14 @@ footer > div .right {
     display: inline-block;
     text-align: left;
     margin-left: 20px;
+}
+
+footer > p {
+    padding: 10px 0;
+}
+
+p {
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
 }
