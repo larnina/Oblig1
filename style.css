@@ -1,29 +1,56 @@
-body {
+@font-face {
+    font-family: 'nobileregular';
+    src: url('nobile-regular-webfont.woff2') format('woff2'),
+         url('nobile-regular-webfont.woff') format('woff'),
+         url('nobile-regular-webfont.ttf') format('truetype'),
+         url('nobile-regular-webfont.svg#nobileregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
     margin: 0 auto;
     font-size: 16px;
+    font-family: 'nobileregular', sans-serif;
+    background-color: #526cb3;
 }
 
 header {
-    background-color: rgba(37, 74, 177, 0.603);
     text-align: center;
     width: 100%;
     display: inline-block;
 }
 
-header > h1 {
-    font-family: 'Gabriela', serif;
-    color: #fff;
-    font-size: 3em;
-    margin: auto;
-    padding: 20px 0 0 0;
-}
-
 nav > ul li {
     color: #fff;
-    font-size: 1.5em;
-    margin: 0;
+    font-size: 1.3rem;
     padding: 0.5em;
-    display: inline-block;
+    display: inline;
+    letter-spacing: 0.1em;
+}
+
+main {
+    color:#526cb3;
+    background-color: #fff;
+    padding: 20px 0 0 0;
+    margin: 10px;
+    width: 100%;
+    min-height: 500px;
+    margin:auto;
+}
+
+main > h2 {
+    
+    font-size: 2.2rem;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 a:link, a:visited {
@@ -31,69 +58,91 @@ a:link, a:visited {
     color: #fff;
 }
 
-a:active, a:hover {
+a:active, a:hover{
     font-weight: bold;
     cursor: default;
     color: #fff;
 }
 
-main {
-    color:rgba(37, 74, 177, 0.603);
-    padding: 20px 0 0 0;
-    margin: 10px;
-    width: 100%;
-    margin:auto;
+a:focus {
+    outline: 1px dotted #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'gabrielaregular', serif;
     text-align: center;
 }
 
-main > h2 {
-    font-family: 'Gabriela', serif;
-    font-size: 2em;
-}
-
-main > h3 {
-    font-size: 1.7em;
-    color: rgb(37, 74, 177, 0.603),
-}
-
-
-footer {
-    margin: auto;
-    height: auto;
-    text-align: center;
-    background-color: rgba(37, 74, 177, 0.603);
+h1 {
     color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    font-size: 3.2rem;
+    margin: auto;
+    padding: 20px 0 0 0;
 }
 
-footer > div {
-    display: inline-block;
-    width: 100%;
-    margin: 50px 0 20px 0;
+h2 {
+    text-transform: uppercase;
 }
 
-footer > div .left {
-    width: 45%;
-    display: inline-block;
-    text-align: right;
-    margin-right: 20px;
-}
-
-footer > div .right {
-    width: 45%;
-    display: inline-block;
-    text-align: left;
-    margin-left: 20px;
-}
-
-footer > p {
-    padding: 10px 0;
+h3 {
+    font-size: 1.8rem;
+    color: #254ab1,
 }
 
 p {
-    max-width: 800px;
-    text-align: center;
+    max-width: 75ch;
+    line-height: 1.3em;
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.meal {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    gap: 5px 15px;
+    width: 18%;
     margin: auto;
+}
+
+.meal > .meal-name {
+    flex-grow: 2;
+}
+
+.meal > .meal-name > h4 {
+    border-bottom: 1px solid #526cb3;
+    font-size: 1.3rem;
+}
+
+.meal > .price {
+    flex-grow: 1;
+}
+.report {
+    margin: auto;
+}
+
+table {
+  padding-bottom: 15px;
+  margin: auto; 
+}
+
+table > thead th, tbody td {
+  margin-top: 10px;
+  padding: 5px 30px;
+  text-align: left;
+}
+
+table > tfoot td{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#info {
 }
