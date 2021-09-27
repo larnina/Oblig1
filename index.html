@@ -1,54 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gunnars Grill</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet"> 
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Gunnars Grill</h1>
         <nav>
             <ul>
-                <a href="#"><li>Menu</li></a>
-                <a href="#"><li>Contact</li></a>
-                <a href="report.html"><li>Project Report</li></a>
+                <a href="index.html" tabindex="1">
+                    <li>Menu</li>
+                </a>
+                <a href="#info" role="button" aria-labelledby="info">
+                    <li>Contact</li>
+                </a>
+                <a href="report.html">
+                    <li>Project Report</li>
+                </a>
             </ul>
 
         </nav>
     </header>
+
     <main>
         <h2>Menu</h2>
 
         <h3>Lunch</h3>
-        <div class="box1">
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Kyllingsalat</h4>
+                <p>Med grillet kylling, pasta, salat, tomat</p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten, laktose</p>
+            </div>
+            <div class="price">149 kr</div>
         </div>
 
         <h3>Dinner</h3>
-        <div class=box2></div>
-
-        <h3>Snacks</h3>
-        <div class="box3"></div>
-    </main>
-    <footer>
-        <div>
-            <div class="left">
-                <address>
-                    Gunnars Grill<br>
-                    Osloveien 1<br>
-                    1234 Oslo
-                </address>
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Hamburgertallerken</h4>
+                <p>Hamburger med pommes frites og salat.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten, laktose</p>
             </div>
-            <div class="right"> Contact Us!
-    
-            </div>
+            <div class="price">149 kr</div>
         </div>
 
-        <p>Copyright <code>&#169;</code> Gunnars Grill 2021</p>
+
+        <h3>Snacks</h3>
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Pommes frites</h4>
+                <p>Med grillkrydder. Velg mellom liten og stor</p>
+                <p class="italic"><span class="bold">Allergener:</span></p>
+            </div>
+            <div class="price">
+                <p>35 kr / 45 kr</p>
+            </div>
+    </main>
+
+    <footer>
+        <section>
+            <h3 id="info">Kontaktinformasjon</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Gunnars Grill</th>
+                        <th>Åpningstider</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Oslovegen 345
+                        </td>
+                        <td>
+                            Søndag - torsdag 11.00-19.00
+                        </td>
+                    </tr>
+                </tbody>
+                <tr>
+                    <td>1234 Oslo</td>
+                    <td>Fredag - lørdag 11.00 - 22.00 </td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><small>Copyright <code>&#169;</code> Gunnars Grill 2021</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
     </footer>
-    
+
+
+
 </body>
+
 </html>
