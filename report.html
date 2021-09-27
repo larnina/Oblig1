@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Report</title>
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
         <h1>Gunnars Grill</h1>
         <nav>
             <ul>
-                <a href="index.html"><li>Menu</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="index.html" tabindex="0"><li>Menu</li></a>
+                <a href="#info"><li>Contact</li></a>
                 <a href="report.html"><li>Project Report</li></a>
             </ul>
 
@@ -22,34 +21,49 @@
     </header>
     <main>
         <h2>Project Report</h2>
-        <p>
-            Before test: Good contrast between colors for people with reduced vision. Ability to use only keyboard to navigate page. For images: alt text 
+        <p class="report">
+            <span class="bold">Before test:</span> High contrast between colors for people with reduced vision. 
+            Ability to use keyboard to navigate page. For images: alt text. Make sure that the basic structure of the HTML documents
+            use landmarks. 
             (because of both screen readers and for people who are dependent on screen readers.)
         </p>
-        <p>
-            After test: 
+        <p class="report">
+            <span class="bold">After test: </span>
         </p>
     </main>
 
     <footer>
-        <div>
-            <div class="left">
-                <address>
-                    Gunnars Grill<br>
-                    Osloveien 1<br>
-                    1234 Oslo
-                </address>
-            </div>
-            <div class="right"> Contact Us!
-    
-            </div>
-        </div>
+        <section>
+            <h3 id="info">Kontaktinformasjon</h3>
+            <table>
+              <thead>
+                  <tr>
+                      <th>Gunnars Grill</th>
+                      <th>Åpningstider</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>
+                        Oslovegen 345
+                    </td>
+                    <td>
+                        Søndag - torsdag 11.00-19.00
+                    </td>
+                </tr>
+              </tbody>
+                <tr>
+                    <td>1234 Oslo</td>
+                    <td>Fredag - lørdag 11.00 - 22.00 </td>
+                </tr>
+              <tfoot>
+                <tr>
+                  <td colspan="2"><small>Copyright <code>&#169;</code> Gunnars Grill 2021</small></td>
+                </tr>
+              </tfoot>
+            </table>
+        </section>       
+        </footer>
 
-        <p>Copyright <code>&#169;</code> Gunnars Grill 2021</p>
-    </footer>
-    
-</body>
-</html>
-    
 </body>
 </html>
