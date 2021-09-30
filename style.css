@@ -23,17 +23,18 @@ html, body {
     margin: 0 auto;
     font-size: 16px;
     font-family: 'nobileregular', sans-serif;
-    background-color: #4a61a1;
+    background-color: #435485;
 }
 
 header {
     text-align: center;
     width: 100%;
     display: inline-block;
+    color: #ffffff;
 }
 
 nav > ul li {
-    color: #fff;
+    color: #ffffff;
     font-size: 1.3rem;
     padding: 0.5em;
     display: inline;
@@ -42,7 +43,7 @@ nav > ul li {
 
 main {
     color:#374670;
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px 0 0 0;
     margin: 10px;
     width: 100%;
@@ -52,7 +53,7 @@ main {
 
 footer {
     margin: 0;
-    color: #fff;
+    color: #ffffff;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -60,23 +61,22 @@ footer {
 
 a:link {
     text-decoration: none;
-    color: #f1f1f1;
+    color: #ffffff;
 }
 
-a:visited {
-    text-decoration: line-through;
-    color: #818181;
-}
-
-a:active, a:hover{
+nav > ul li > a:active, a:hover{
     font-weight: bold;
     cursor: default;
-    color: #fff;
+    color: #ffffff;
 }
 
 a:focus {
-    outline: 1px solid #f1f1f1;
+    outline: 1px solid #ffffff;
     font-weight: bold;
+}
+
+nav > ul li > a:visited {
+    color: #f3ffad;
 }
 
 h1, h2, h3 {
@@ -112,6 +112,7 @@ p {
     max-width: 75ch;
     line-height: 1.5em;
     text-align: left;
+    font-size: 1rem;
 }
 
 .center {
@@ -131,8 +132,12 @@ p {
     flex-flow: row nowrap;
     align-items: baseline;
     gap: 10px 15px;
-    width: 30%;
+    width: 40%;
     margin: auto;
+}
+
+.meal:last-child {
+    padding-bottom: 40px;
 }
 
 .meal > .meal-name {
@@ -145,11 +150,29 @@ p {
 }
 
 .meal > .price {
-    flex-grow: 2;
+    flex-grow: 2.5;
+}
+
+.meal > .price > ul li {
+    list-style: none;
+    margin: 0;
 }
 
 .report {
     margin: auto;
+    padding: 8px;
+}
+
+.report > a:link{
+    text-decoration: underline;
+}
+
+.report > a:active, a:hover {
+    color: #374670;
+}
+
+.report:last-child {
+    padding-bottom: 50px;
 }
 
 table {
