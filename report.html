@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,16 @@
     <title>Project Report</title>
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Gunnars Grill</h1>
         <nav>
             <ul>
-                <a href="index.html" tabindex="1">
-                    <li>Menu</li>
-                </a>
-                <a href="#info" tabindex="2">
-                    <li>Contact</li>
-                </a>
-                <a href="report.html" tabindex="3">
-                    <li>Project Report</li>
-                </a>
+
+                <li><a href="index.html">Meny</a></li>
+                <li> <a href="#info">Kontakt</a></li>
+                <li><a href="report.html">Prosjektrapport</a></li>
             </ul>
 
         </nav>
@@ -29,14 +26,57 @@
     <main>
         <h2>Project Report</h2>
         <p class="report">
-            <span class="bold">Before test:</span> High contrast between colors for people with reduced vision. 
-            Ability to use keyboard to navigate page. For images: alt text. Make sure that the basic structure of the HTML documents
-            use landmarks. 
-            (because of both screen readers and for people who are dependent on screen readers.)
+            Før nettsiden tok form ble det laget en liste over hva vi
+            i gruppen syntes det var viktig å ha med. Målet med nettsiden var å kunne inkludere så mange som mulig
+            a tenkte vi både unge og eldre, og de med redusert funksjonsevne som for eksempel redusert syn og
+            muskelproblemer.</p>
+
+        <p class="report">For å få til dette måtte vi ta i bruk sterke kontraster mellom fargene og ikke minst sørge for
+            at det
+            er lett å lese og forstå. Det første vi tenkte på når vi begynte å utforme HTML-dokumentet, var å bruke
+            seksjonstagene som header, main, nav og footer for å danne grunn-layouten av siden. Dette gjorde vi både
+            fordi det blir lettere for personer som bruker screen readers, men også på grunn av søkemotoroptimalisering.
         </p>
+
         <p class="report">
-            <span class="bold">After test: </span>
+            For de som ikke kan bruke datamus av ulike grunner, så ble det lagt til navigering av nettsiden ved bruk av
+            tastatur ved å bruke pseudoklassen :focus til a-tagen. Vi brukte også den relative enheten rem i stedet for
+            den absolutte enheten pixel i font-size og line-height, så det vil være mulig å forstørre teksten for folk
+            som har behov for det.</p>
+
+        <p class="report">Vi reflekterte også over bruk av bilder. Ved bruk av bilder er det viktig å legge inn alt-text
+            for å
+            beskrive bildets innhold, både for brukere med nedsatt syn og for å gi nettsiden høyere ranking i SEO
+            (search engine optimalization) ved at søkemotorer skal kunne indeksere bildet riktig og se mer av innholdet
+            på siden.</p>
+
+
+        <p class="report">For å kunne få bedre ytelse for mennesker med problemer rundt korttidshukommelse når linkene
+            har blitt
+            “besøkt”, vil de kunne få se det med fargen “gult” for a:visited etter at de har trykket på lenken. Det med
+            å kunne gi bedre ytelse blant person med korttidshukommelse er viktig, og bare slike små endringer kan være
+            til hjelp.</p>
+
+
+        <p class="report">For å teste siden brukte vi
+            <a href="https://achecker.achecks.ca/checker/index.php">https://achecker.achecks.ca/checker/index.php</a>
+            og fikk ingen kjente problemer,
+            men vi fikk 34 potensielle problemer. Blant annet hadde vi ikke lagt ved et sammendrag (summary) i tagen
+            table i footeren. Vi la derfor til en kort beskrivelse om hva første og andre kolonne inneholder, men da vi
+            kjørte koden om igjen ble dette et known problem. Vi valgte derfor å fjerne sammendraget igjen. Vi spurte
+            også en lærerassistent om disse problemene, og fikk da beskjed om å ikke gjøre noe med disse.
         </p>
+
+
+        <p class="report">Vi testet også fargene ved hjelp av <a
+                href="https://color.a11y.com/?wc3">https://color.a11y.com/?wc3</a>. Fargene i main fikk en
+            kontrastratio på
+            9.24:1, og en ratio på 7.38:1 på fargene i header/footer. Som nevnt tidligere vil en sterk kontrast kunne
+            gjøre det lettere for svaksynte og fargeblinde å kunne skille mellom tekst og bakgrunn. Det er ikke bare for
+            de med synsutfordringer, men også de som har problemer med hukommelse, kan ha lettere for å huske innhold
+            hvor kontrasten er stor.</p>
+
+
     </main>
 
     <footer class="center">
@@ -65,11 +105,13 @@
                 </tr>
                 <tfoot>
                     <tr>
-                        <td colspan="2" class="center"><small>Copyright <code>&#169;</code> Gunnars Grill 2021</small></td>
+                        <td colspan="2" class="center"><small>Copyright <code>&#169;</code> Gunnars Grill 2021</small>
+                        </td>
                     </tr>
                 </tfoot>
             </table>
         </section>
     </footer>
 </body>
+
 </html>
