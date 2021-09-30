@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
@@ -13,77 +13,89 @@
     <header>
         <h1>Gunnars Grill</h1>
         <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Menu</li>
-                </a>
-                <a href="#info">
-                    <li>Contact</li>
-                </a>
-                <a href="report.html">
-                    <li>Project Report</li>
-                </a>
+            <ul>               
+                    <li><a href="index.html">Meny</a></li>
+                    <li><a href="#info">Kontakt</a></li>              
+                    <li><a href="report.html">Prosjektrapport</a></li>               
             </ul>
-
         </nav>
     </header>
 
     <main>
-        <h2>Menu</h2>
+        <h2>Meny</h2>
         <h3 class="bold">Lunch</h3>
         <div class="meal">
             <div class="meal-name">
                 <h4>Kyllingsalat</h4>
-                <p>Med grillet kylling, pasta, salat, tomat</p>
+                <p>Med grillet kylling, pasta, salat, tomat, egg, dressing.
+                </p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten, laktose, soya, egg, selleri</p>
+            </div>
+            <div class="price">149 kr</div>
+        </div>
+
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Hamburger</h4>
+                <p>Hamburger med dressing. Velg mellom 100g og 150g.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten, selleri</p>
+            </div>
+            <div class="price">59 kr / 79 kr</div>
+        </div>
+
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Grillpølse</h4>
+                <p>Grillpølse. Velg mellom pølsebrød og lompe.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten</p>
+            </div>
+            <div class="price">39 kr</div>
+        </div>
+
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Ostepølse</h4>
+                <p>Grillpølse med ost. Velg mellom pølsebrød og lompe.</p>
                 <p class="italic"><span class="bold">Allergener:</span> Gluten, laktose</p>
             </div>
-            <div class="price">149 kr</div>
+            <div class="price">44 kr</div>
         </div>
 
-        <div class="meal">
-            <div class="meal-name">
-                <h4>Lunsj #2</h4>
-                <p>Beskrivelse</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
-            </div>
-            <div class="price">149 kr</div>
-        </div>
-
-        <div class="meal">
-            <div class="meal-name">
-                <h4>Lunsj #3</h4>
-                <p>Beskrivelse</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
-            </div>
-            <div class="price">149 kr</div>
-        </div>
-
-        <h3 class="bold">Dinner</h3>
+        <h3 class="bold">Middag</h3>
         <div class="meal">
             <div class="meal-name">
                 <h4>Hamburgertallerken</h4>
-                <p>Hamburger med pommes frites og salat.</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
+                <p>Hamburger med pommes frites, dressing og salat.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten, selleri</p>
+            </div>
+            <div class="price">179 kr</div>
+        </div>
+
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Cheeseburgertallerken</h4>
+                <p>Cheeseburger med pommes frites, dressing og salat.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten, laktose, selleri, soya</p>
+            </div>
+            <div class="price">189 kr</div>
+        </div>
+
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Cheeseburger</h4>
+                <p>Hamburger med ost. Velg mellom 100g og 150g.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Gluten, laktose</p>
+            </div>
+            <div class="price">69 kr / 89 kr</div>
+        </div>
+
+        <div class="meal">
+            <div class="meal-name">
+                <h4>Grillet kyllinglår</h4>
+                <p>Grillet kyllinglår med grillkrydder, dressing og salat.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Selleri, soya</p>
             </div>
             <div class="price">149 kr</div>
-        </div>
-
-        <div class="meal">
-            <div class="meal-name">
-                <h4>Dinner #2</h4>
-                <p>Beskrivelse</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
-            </div>
-            <div class="price">### kr</div>
-        </div>
-
-        <div class="meal">
-            <div class="meal-name">
-                <h4>Dinner #3</h4>
-                <p>Beskrivelse</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
-            </div>
-            <div class="price">### kr</div>
         </div>
 
 
@@ -91,33 +103,34 @@
         <div class="meal">
             <div class="meal-name">
                 <h4>Pommes frites</h4>
-                <p>Med grillkrydder. Velg mellom liten og stor</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
+                <p>Med grillkrydder. Velg mellom liten og stor størrelse.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Selleri</p>
             </div>
             <div class="price">
-                <p>35 kr / 45 kr</p>
+                <p>39 kr / 49 kr</p>
             </div>
         </div>
 
         <div class="meal">
             <div class="meal-name">
-                <h4>Snack #2</h4>
-                <p>Beskrivelse</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
+                <h4>Milkshake</h4>
+                <p>Velg mellom sjokolade, jordbær, vanlije, pistasj.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Laktose, melk, egg</p>
             </div>
             <div class="price">
-                <p>## kr</p>
+                <p>59 kr</p>
             </div>
         </div>
 
         <div class="meal">
             <div class="meal-name">
-                <h4>Snacks #3</h4>
-                <p>Beskrivelse</p>
-                <p class="italic"><span class="bold">Allergener:</span></p>
+                <h4>Kuleis</h4>
+                <p>Velg mellom sjokolade, jordbær, vanilje, pistasj.</p>
+                <p>Velg mellom en, to og tre kuler.</p>
+                <p class="italic"><span class="bold">Allergener:</span> Laktose, melk, egg</p>
             </div>
             <div class="price">
-                <p>## kr</p>
+                <p>29 kr / 34 kr / 39 kr</p>
             </div>
         </div>
 
