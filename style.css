@@ -59,7 +59,7 @@ footer {
     width: 100%;
 }
 
-a:link {
+nav > ul li > a:link {
     text-decoration: none;
     color: #ffffff;
 }
