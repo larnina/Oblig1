@@ -167,7 +167,7 @@ p {
     text-decoration: underline;
 }
 
-.report > a:active, a:hover {
+.report > a:hover {
     color: #374670;
 }
 
